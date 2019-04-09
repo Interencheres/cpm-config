@@ -4,7 +4,7 @@
   "description": "handle configuration",
   "main": "app.js",
   "scripts": {
-    "tests:run": "NODE_ENV=test jest --coverage",
+    "tests:run": "NODE_ENV=test jest --env=node --coverage",
     "tests:eslint": "eslint .",
     "tests:syntax": "npm run tests:eslint"
   },
