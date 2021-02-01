@@ -3,11 +3,9 @@
 const process = require("process");
 
 module.exports = (() => {
-    switch (process.env.NODE_ENV) {
-        case "test":
-            return require("../../config-test.json");
-        /* istanbul ignore next */
-        default:
-            return require("../../config.json");
+    if(process.env.CPM_CONFIG_FILE) {
+        return require("../../" + process.env.CPM_CONFIG_FILE);
+    } else {
+        return require("../../config.json");
     }
 })();
