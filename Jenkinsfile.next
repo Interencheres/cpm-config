@@ -1,0 +1,19 @@
+indbApplication([
+    tests: [
+        "Test lint": [
+            "service": "cpm-config-node",
+            "script": "npm run tests:eslint"
+        ],
+        "Test coverage": [
+            "service": "cpm-config-node",
+            "script": "npm run tests:coverage:jenkins"
+        ],
+    ],
+    build: [
+            "service": "cpm-config-node"
+    ],
+    publish: [
+            "service": "cpm-config-node",
+            "type": "npm"
+    ]
+])
