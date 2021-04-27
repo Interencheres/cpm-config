@@ -1,12 +1,13 @@
 {
-  "name": "cpm-config",
-  "version": "1.0.0",
+  "name": "@cpm/cpm-config",
+  "version": "1.1.0",
   "description": "handle configuration",
   "main": "app.js",
   "scripts": {
-    "tests:run": "NODE_ENV=test jest --coverage",
+    "tests:run": "NODE_ENV=test jest --env=node --coverage",
     "tests:eslint": "eslint .",
-    "tests:syntax": "npm run tests:eslint"
+    "tests:syntax": "npm run tests:eslint",
+    "tests:coverage:jenkins": "NODE_ENV=ci jest --env=node --coverage --verbose --runInBand"
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,7 @@
   "homepage": "https://github.com/Interencheres/cpm-config#readme",
   "devDependencies": {
     "eslint": "^5.12.0",
+    "handlebars": "^4.5.0",
     "jest": "^22.4.3"
   }
 }
