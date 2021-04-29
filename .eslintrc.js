@@ -1,25 +1,27 @@
+"use strict";
+
 module.exports = {
-    "env": {
-        "es6": true,
-        "node": true,
-        "jest": true
+    env: {
+        es6: true,
+        node: true,
+        jest: true
     },
-    "extends": "eslint:recommended",
-    "rules": {
-        "indent": [
+    extends: "eslint:recommended",
+    rules: {
+        indent: [
             "error",
             4,
-            { "SwitchCase": 1 }
+            { SwitchCase: 1 }
         ],
         "linebreak-style": [
             "error",
             "unix"
         ],
-        "quotes": [
+        quotes: [
             "error",
             "double"
         ],
-        "semi": [
+        semi: [
             "error",
             "always"
         ],
@@ -27,7 +29,7 @@ module.exports = {
             "error",
             "never",
             {
-                "singleValue": true
+                singleValue: true
             }
         ],
         "object-curly-spacing": [
@@ -38,7 +40,7 @@ module.exports = {
             "error",
             "as-needed"
         ],
-        "eqeqeq": [
+        eqeqeq: [
             "error",
             "always"
         ],
@@ -61,9 +63,9 @@ module.exports = {
         "no-multiple-empty-lines": [
             "error",
             {
-                "max": 1,
-                "maxBOF": 0,
-                "maxEOF": 0
+                max: 1,
+                maxBOF: 0,
+                maxEOF: 0
             }
         ],
         "one-var": [
@@ -80,7 +82,7 @@ module.exports = {
         ],
         "max-statements-per-line": [
             "error",
-            { "max": 1 }
+            { max: 1 }
         ],
         "max-statements": [
             "error",
@@ -90,26 +92,26 @@ module.exports = {
             "error",
             4
         ],
-        "complexity": [
+        complexity: [
             "error",
             10
         ],
         "no-plusplus": [
             "error",
-            { "allowForLoopAfterthoughts": true }
+            { allowForLoopAfterthoughts: true }
         ],
-        "camelcase": [
+        camelcase: [
             "error",
-            { "properties": "never"}
+            { properties: "never" }
         ],
         "no-var": "error",
         "arrow-spacing": "error",
         "space-infix-ops": "error",
-        "strict": "error",
+        strict: "error",
         "no-bitwise": "error",
         "operator-linebreak": "error",
         "no-new": "error",
-        "curly": "error",
+        curly: "error",
         "no-eval": "error",
         "no-eq-null": "error",
         "vars-on-top": "error",
