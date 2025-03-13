@@ -1,3 +1,5 @@
+@Library('cpm-jenkins-lib@fixSonarPrNumber') _
+
 indbApplication([
     tests: [
         "Test lint": [
